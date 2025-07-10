@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gabriel Almeida Oliveira</title>
+    <style>
+        :root {
+            --blue: #2563eb;
+            --sidebar-bg: #222;
+            --card-bg: #fff;
+            --text-main: #222;
+            --gray: #f2f2f2;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--gray);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            box-shadow: 0 0 14px #aaa;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: #fff;
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfolio-header {
+            width: 100%;
+            background: var(--blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0 20px 0;
+            position: relative;
+        }
+        .portfolio-header .portfolio-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: #fff;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        }
+        .name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 22px 0 15px 0;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .section-title {
+            color: #c4c4c4;
+            font-weight: bold;
+            margin: 25px 0 8px 0;
+            letter-spacing: 1px;
+            font-size: 1.02em;
+            text-align: center;
+        }
+        .contact, .about, .achievements {
+            font-size: 1em;
+            text-align: center;
+        }
+        .main {
+            padding: 28px 12px 18px 12px;
+            flex: 1;
+        }
+        .main h2 {
+            margin-top: 0;
+            color: var(--text-main);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 6px;
+            font-size: 1.06em;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0 0 10px 0;
+        }
+        .info-block {
+            margin-bottom: 18px;
+        }
+        @media (min-width: 700px) {
+            .container {
+                flex-direction: row;
+            }
+            .sidebar {
+                width: 310px;
+                min-height: 100%;
+                align-items: center;
+                padding: 0;
+            }
+            .main {
+                padding: 40px 35px 28px 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Lado esquerdo -->
+        <div class="sidebar">
+            <div class="portfolio-header">
+                <span class="portfolio-title">Meu portfólio</span>
+                <!-- Substitua o valor do src abaixo pelo caminho ou URL da sua foto -->
+                <img src="coloque-o-link-da-sua-foto-aqui.jpg" alt="Foto de perfil" class="profile-img">
+            </div>
+            <div class="name">GABRIEL ALMEIDA OLIVEIRA</div>
+            <div class="section-title">QUEM SOU EU</div>
+            <div class="about">
+                Operador de produção em micro com 25 anos, de Pará de Minas. Tenho experiência em gestão de demanda, tomada de decisões assertivas para garantir o cumprimento de prazos e metas, e forte espírito de equipe. Busco aplicar minhas competências em controle e programação de produção para otimizar processos e aumentar a eficiência operacional na sua empresa.
+            </div>
+            <div class="section-title">REALIZAÇÕES</div>
+            <div class="achievements">
+                <ul>
+                    <li>Destaque do mês várias vezes (Itambé)</li>
+                    <li>Plataforma nota 10 - 1º lugar</li>
+                    <li>Mudanças em rotas de automação</li>
+                    <li>Inspeções em caminhões NR-33</li>
+                    <li>Participações em Workshops</li>
+                    <li>Permissão para dirigir veículo da empresa, categoria A e B</li>
+                </ul>
+            </div>
+            <div class="section-title">ENTRE EM CONTATO</div>
+            <div class="contact">
+                Celular: (37) 99842-7573 <br>
+                Email: gabriel.oliveira.21@hotmail.com
+            </div>
+        </div>
+        <!-- Lado direito -->
+        <div class="main">
+            <div class="info-block">
+                <strong>Ocupação atual:</strong> Itambé Lactalis - 3 anos
+            </div>
+            <div class="info-block">
+                <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+                <strong>Itambé Lactalis</strong><br>
+                Cargo: Operador de micro (sala de comando)<br>
+                Função: Responsável por monitorar e controlar processos e equipamentos em uma sala centralizada onde recebe demandas diárias.<br><br>
+                <strong>Serralheria Zincal LTDA</strong><br>
+                Cargo: Pintor e Solda<br>
+                Função: Responsável pelo lixamento; aplicações de fundo e pintura em geral de metais e também atua na montagem de portão, janelas, estruturas de galpão e etc (solda de eletrodos).
+            </div>
+            <div class="info-block">
+                <h2>PERCURSO ACADÊMICO</h2>
+                <strong>CONHECIMENTOS</strong>
+                <ul>
+                    <li>Windows: Ótimo domínio</li>
+                    <li>Word: Médio domínio</li>
+                    <li>Excel: Médio domínio</li>
+                    <li>PowerPoint: Médio domínio</li>
+                    <li>Internet: Ótimo domínio</li>
+                    <li>Digitação: Ótimo domínio</li>
+                    <li>Inglês: Pouco domínio</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h2>OUTRAS HABILIDADES E/OU CONHECIMENTOS</h2>
+                NR 33: Trabalho em espaço confinado<br>
+                NR 35: Trabalho em altura<br>
+                5S: Prática feita periodicamente
+            </div>
+            <div class="info-block">
+                <h2>DADOS ACADÊMICOS</h2>
+                <strong>Instituição de Ensino:</strong> Senai<br>
+                <strong>Cidade:</strong> Pará de Minas<br>
+                <strong>Curso Matriculado:</strong> Técnico para Internet<br>
+                <strong>Modalidade:</strong> Presencial<br>
+                <strong>Nível:</strong> Curso Técnico<br>
+                <strong>Duração:</strong> 1 ano e 6 meses<br>
+                <strong>Turno do Curso:</strong> Noturno<br>
+                <strong>Horário Escolar:</strong> 18:30 às 22:30<br>
+                <strong>Data da Provável Formatura:</strong> 07/2025
+            </div>
+            <div class="info-block">
+                <h2>INTERESSES PRINCIPAIS</h2>
+                <ul>
+                    <li>Pós curso técnico pretendo iniciar uma faculdade;</li>
+                    <li>Adquirir mais conhecimentos na área.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
