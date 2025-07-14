@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  api:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: lactalis
+      POSTGRES_PASSWORD: lactalis123
+      POSTGRES_DB: descarga_leite
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
