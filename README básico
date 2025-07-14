@@ -1,0 +1,26 @@
+# Controle de Descarga de Leite - Lactalis
+
+## Rodando com Docker
+
+```sh
+docker-compose up --build
+```
+
+## Rodando localmente
+
+1. Instale o PostgreSQL e crie o banco `descarga_leite`
+2. Copie `.env.example` para `.env` e ajuste se necessário
+3. Instale dependências:
+
+```sh
+npm install
+npx sequelize-cli db:migrate
+npm start
+```
+
+## Rotas da API
+
+- `GET /api/caminhoes`
+- `POST /api/caminhoes`
+- `PUT /api/caminhoes/:id`
+- `DELETE /api/caminhoes/:id`
