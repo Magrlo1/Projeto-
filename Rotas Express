@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const caminhaoController = require('../controllers/caminhaoController');
+
+router.get('/', caminhaoController.list);
+router.post('/', caminhaoController.create);
+router.put('/:id', caminhaoController.update);
+router.delete('/:id', caminhaoController.delete);
+
+module.exports = router;
