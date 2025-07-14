@@ -1,0 +1,12 @@
+const express = require('express');
+const app = express();
+const caminhaoRoutes = require('./routes/caminhaoRoutes');
+const sequelize = require('./database');
+
+app.use(express.json());
+
+app.use('/api/caminhoes', caminhaoRoutes);
+
+app.get('/', (req, res) => res.send('API Controle de Descarga de Leite - Lactalis'));
+
+module.exports = app;
