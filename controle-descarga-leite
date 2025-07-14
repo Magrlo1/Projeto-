@@ -1,0 +1,23 @@
+controle-descarga-leite/
+│
+├── docker-compose.yml
+├── Dockerfile
+├── package.json
+├── .env
+├── README.md
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── config/
+│   │   └── database.js
+│   ├── models/
+│   │   └── Caminhao.js
+│   ├── migrations/
+│   │   └── 20230714-create-caminhao.js
+│   ├── controllers/
+│   │   └── caminhaoController.js
+│   └── routes/
+│       └── caminhaoRoutes.js
+│
+└── (frontend HTML, se quiser servir por aqui também)
